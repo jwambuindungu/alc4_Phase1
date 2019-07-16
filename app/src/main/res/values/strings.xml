@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name"> ALC 4 Phase 1 </string>
+
+    <string name="title_activity_c">My Profile</string>
+    <string name="title_activity_b">About ALC</string>
+
+    <string name="title_country">Country:</string>
+    <string name="my_country">Kenya</string>
+
+    <string name="title_track">Track:</string>
+    <string name="my_track">Android</string>
+
+    <string name="title_email">Email:</string>
+    <string name="my_email">jwambuindungu@gmail.com</string>
+
+    <string name="title_phone">Phone Number:</string>
+    <string name="my_phone">254 020 4914006</string>
+
+    <string name="my_main_toolbar">ALC 4 Phase 1</string>
+
+    <string name="title_slack_username">Slack Username:</string>
+    <string name="my_slack_username">"@jwambuindungu"</string>
+
+
+</resources>

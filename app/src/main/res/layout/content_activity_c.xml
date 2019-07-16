@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityC"
+    tools:showIn="@layout/activity_c">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myphoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/my_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mytitle"
+        style="@style/HeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:text="Josephine Mwangi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myphoto" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@android:drawable/bottom_bar"
+        android:backgroundTint="@color/colorHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mytitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <!-- Track  Category -->
+        <LinearLayout
+            android:id="@+id/container_track"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CaptionStyle"
+                android:text="@string/title_track" />
+
+            <!-- text fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- Name field -->
+                <TextView
+                    android:id="@+id/track_name"
+                    style="@style/EditorFieldStyle"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_track" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Country Category -->
+        <LinearLayout
+            android:id="@+id/container_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CaptionStyle"
+                android:text="@string/title_country" />
+
+            <!-- text fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- country textview -->
+                <TextView
+                    android:id="@+id/country_name"
+                    style="@style/EditorFieldStyle"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_country" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Email Category -->
+        <LinearLayout
+            android:id="@+id/container_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CaptionStyle"
+                android:text="@string/title_email" />
+
+            <!-- text fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- email textview -->
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/EditorFieldStyle"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_email" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Phone Category -->
+        <LinearLayout
+            android:id="@+id/container_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CaptionStyle"
+                android:text="@string/title_phone" />
+
+            <!-- text fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- phone textview -->
+                <TextView
+                    android:id="@+id/phone_number"
+                    style="@style/EditorFieldStyle"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_phone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Slack Username Category -->
+        <LinearLayout
+            android:id="@+id/container_slack_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Label -->
+            <TextView
+                style="@style/CaptionStyle"
+                android:text="@string/title_slack_username"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <!-- text fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!-- Slack Username textview -->
+                <TextView
+                    android:id="@+id/slack_user_name"
+                    style="@style/EditorFieldStyle"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_slack_username" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
